@@ -14,7 +14,7 @@ macro(250, "Follow Atk", function()
            end)
 
 
-macro(1000, "Open bag", function()
+macro(1000, "OpenBAG", function()
     bpItem = getBack()
     bp = getContainer(0)
 
