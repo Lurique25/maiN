@@ -121,6 +121,37 @@ end)
 
 
 
+local loadPanelName = "Restart"
+local cores = {"pink", "white", "green", "red", "blue"}
+local cores2 = 0
+
+local ui = setupUI([[
+Panel
+  height: 20
+
+  Button
+    id: editLoad
+    color: yellow
+    font: verdana-11px-rounded
+    anchors.top: parent.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    height: 23
+    text: Restart
+    tooltip: Clique Para Recarregar
+
+]], parent)
+
+ui.editLoad.onClick = function(widget)
+    reload()
+end
+
+macro(250, function()
+    cores2 = cores2 == #cores and 1 or cores2 + 1
+    ui.editLoad:setColor(cores[cores2])
+end)
+
+UI.Separator()
 
 
 
