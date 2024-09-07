@@ -1,3 +1,7 @@
+warn("Você foi desconectado")
+warn("Você foi desconectado")
+warn("Você foi desconectado")
+warn("Você foi desconectado")
 UI.Label("discord: riquezerah")
 UI.Label("discord: riquezerah")
 UI.Label("discord: riquezerah")
